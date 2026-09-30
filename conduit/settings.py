@@ -136,6 +136,8 @@ STATIC_URL = '/static/'
 CORS_ORIGIN_WHITELIST = (
     '0.0.0.0:4000',
     'localhost:4000',
+    os.getenv('IP_ADDRESS_SERVER'),
+
 )
 
 # Tell Django about the custom `User` model we created. The string
